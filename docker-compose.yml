@@ -4,3 +4,5 @@
     build:
       context: .
       dockerfile: Host/Dockerfile
+    ports:
+      - "8893:8893"
