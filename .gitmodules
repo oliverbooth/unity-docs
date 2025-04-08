@@ -1,0 +1,3 @@
+[submodule "tools/dotnet-syntaxgen"]
+	path = tools/dotnet-syntaxgen
+	url = https://github.com/oliverbooth/dotnet-syntaxgen.git
