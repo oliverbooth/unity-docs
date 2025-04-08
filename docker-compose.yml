@@ -7,6 +7,6 @@
       args:
         - BAGET_API_KEY=${BAGET_API_KEY}
     ports:
-      - "8993:8993"
+      - "8893:8893"
     env_file:
       - stack.env

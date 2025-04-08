@@ -1,7 +1,7 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER $APP_UID
 WORKDIR /app
-EXPOSE 8993
+EXPOSE 8893
 
 FROM node:20-alpine as build-deps
 WORKDIR /src
