@@ -30,3 +30,8 @@ Contributions will be welcome in the near future. Watch this space.
 
 ## License
 This repository is licensed under [MIT](LICENSE.md).
+
+## Disclaimer
+This project is not affiliated with Unity Technologies or any of its subsidiaries, nor with Microsoft or any of its
+subsidiaries. This project is not endorsed by either company and is not intended to be a replacement for the official
+Unity documentation. This project is intended for educational purposes only and will always be free to use.
