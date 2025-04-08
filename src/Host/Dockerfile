@@ -13,8 +13,10 @@ RUN gulp
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
+ARG BAGET_API_KEY
 WORKDIR /src
 COPY ["src/Host/Host.csproj", "src/Host/"]
+RUN dotnet nuget add source --username oliverbooth --password $BAGET_API_KEY --store-password-in-clear-text --name baget "https://nuget.booth.dev/v3/index.json"
 RUN dotnet restore "src/Host/Host.csproj"
 COPY . .
 WORKDIR "/src/src/Host"
