@@ -3,7 +3,7 @@
     container_name: unity-docs-host
     build:
       context: .
-      dockerfile: Host/Dockerfile
+      dockerfile: src/Host/Dockerfile
       args:
         - BAGET_API_KEY=${BAGET_API_KEY}
     ports:
