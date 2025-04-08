@@ -1,8 +1,12 @@
-services:
+﻿services:
   host:
     container_name: unity-docs-host
     build:
       context: .
       dockerfile: Host/Dockerfile
+      args:
+        - BAGET_API_KEY=${BAGET_API_KEY}
     ports:
       - "8993:8993"
+    env_file:
+      - stack.env
