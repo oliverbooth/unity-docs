@@ -14,10 +14,10 @@ RUN gulp
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Host/Host.csproj", "Host/"]
-RUN dotnet restore "Host/Host.csproj"
+COPY ["src/Host/Host.csproj", "src/Host/"]
+RUN dotnet restore "src/Host/Host.csproj"
 COPY . .
-WORKDIR "/src/Host"
+WORKDIR "/src/src/Host"
 RUN dotnet build "Host.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
