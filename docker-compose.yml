@@ -1,0 +1,6 @@
+﻿services:
+  host:
+    container_name: unity-docs-host
+    build:
+      context: .
+      dockerfile: Host/Dockerfile

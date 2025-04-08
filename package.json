@@ -1,0 +1,35 @@
+{
+  "name": "unity-docs",
+  "version": "1.0.0",
+  "description": "Unity documentation as it should be.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliverbooth/unity-docs.git"
+  },
+  "keywords": [
+    "unity",
+    "docs",
+    "rewrite",
+    "msdn"
+  ],
+  "author": "Oliver Booth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliverbooth/unity-docs/issues"
+  },
+  "homepage": "https://github.com/oliverbooth/unity-docs#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.86.3",
+    "webpack-stream": "^7.0.0"
+  }
+}
