@@ -1,8 +1,8 @@
-﻿services:
+services:
   host:
     container_name: unity-docs-host
     build:
       context: .
       dockerfile: Host/Dockerfile
     ports:
-      - "8893:8893"
+      - "8993:8993"
